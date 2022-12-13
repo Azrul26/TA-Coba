@@ -32,8 +32,8 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="tables.html">
-                    <i class="fas fa-fw fa-gift"></i>
-                    <span>Oleh-oleh</span></a>
+                    <i class="fas fa-fw fa-solid fa-coffee"></i>
+                    <span>Minuman</span></a>
             </li>
             <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
