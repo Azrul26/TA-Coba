@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 13 Des 2022 pada 12.41
+-- Waktu pembuatan: 13 Des 2022 pada 20.12
 -- Versi server: 10.4.22-MariaDB
 -- Versi PHP: 7.4.28
 
@@ -42,12 +42,10 @@ CREATE TABLE `tb_barang` (
 --
 
 INSERT INTO `tb_barang` (`id_barang`, `nama_brg`, `keterangan`, `kategori`, `harga`, `stok`, `gambar`) VALUES
-(1, 'keripik pisang', 'Oleh-oleh khas lampung', 'Makanan', 30000, 10, 'keripik.jpg'),
-(2, 'Manisan', 'Makanan Cemilan Manis', 'Makanan', 20000, 15, 'manisan.jpg'),
-(3, 'Dodol', 'Cemilan dodol manis', 'Makanan', 10000, 8, 'dodol.jpg'),
-(4, 'Kue Pisang', 'Makanan Khas Lampung', 'Makanan', 40000, 7, 'pisang.jpg'),
-(5, 'Lapis Legit', 'Lapis legit biasa disebut dengan spekuk', 'Makanan', 35000, 10, 'legit.jpg'),
-(6, 'Lempuk Durian', 'lempuk disebut juga dengan istilah dodol', 'Makanan', 60000, 6, 'lempuk.jpg');
+(1, 'Keripik Pisang Chips', 'Pisang diiris tipis kemudian digoreng dan dibumbui', 'Makanan', 25000, 15, 'keripikpisangchip.jpg'),
+(2, 'Dodol Duren', 'Lempok yang dibuat dengan bahan durian', 'Makanan', 18000, 10, 'dodolduren.jpg'),
+(3, 'Tokyo Banana', 'Kue yang di dalamnya diisi dengan krim pisang', 'Makanan', 11000, 8, 'tokyobanana.jpg'),
+(4, 'Pie Pisang Besar', 'Pie yang dicetak berbentuk pisang', 'Makanan', 50000, 6, 'piepisangbesar.jpg');
 
 --
 -- Indexes for dumped tables
