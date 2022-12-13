@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 13 Des 2022 pada 11.37
+-- Waktu pembuatan: 13 Des 2022 pada 12.41
 -- Versi server: 10.4.22-MariaDB
 -- Versi PHP: 7.4.28
 
@@ -42,9 +42,12 @@ CREATE TABLE `tb_barang` (
 --
 
 INSERT INTO `tb_barang` (`id_barang`, `nama_brg`, `keterangan`, `kategori`, `harga`, `stok`, `gambar`) VALUES
-(1, 'keripik pisang', 'oleh-oleh lampung', 'Makanan', 30000, 10, 'keripik.jpg'),
-(2, 'Lapis Legit', 'Lapis legit biasa disebut dengan spekuk', 'Makanan', 35000, 6, 'legit.jpg'),
-(3, 'Lempuk Durian', 'lempuk disebut juga dengan istilah dodol', 'Makanan', 60000, 6, 'lempuk.jpg');
+(1, 'keripik pisang', 'Oleh-oleh khas lampung', 'Makanan', 30000, 10, 'keripik.jpg'),
+(2, 'Manisan', 'Makanan Cemilan Manis', 'Makanan', 20000, 15, 'manisan.jpg'),
+(3, 'Dodol', 'Cemilan dodol manis', 'Makanan', 10000, 8, 'dodol.jpg'),
+(4, 'Kue Pisang', 'Makanan Khas Lampung', 'Makanan', 40000, 7, 'pisang.jpg'),
+(5, 'Lapis Legit', 'Lapis legit biasa disebut dengan spekuk', 'Makanan', 35000, 10, 'legit.jpg'),
+(6, 'Lempuk Durian', 'lempuk disebut juga dengan istilah dodol', 'Makanan', 60000, 6, 'lempuk.jpg');
 
 --
 -- Indexes for dumped tables
@@ -64,7 +67,7 @@ ALTER TABLE `tb_barang`
 -- AUTO_INCREMENT untuk tabel `tb_barang`
 --
 ALTER TABLE `tb_barang`
-  MODIFY `id_barang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_barang` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
