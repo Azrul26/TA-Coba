@@ -24,8 +24,8 @@
             <td><?php echo $brg->harga ?></td>
             <td><?php echo $brg->stok ?></td>
             <td><div class="btn btn-success btn-sm"><i class="fas fa-search-plus"></i></div></td>
-            <td><div class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></div></td>
-            <td><div class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></div></td>
+            <td><?php echo anchor('admin/data_barang/edit/' .$brg->id_barang, '<div class="btn btn-primary btn-sm"><i class="fas fa-edit"></i></div>') ?></td>
+            <td><?php echo anchor('admin/data_barang/hapus/' .$brg->id_barang, '<div class="btn btn-danger btn-sm"><i class="fas fa-trash"></i></div>') ?></td>
         </tr>
 
         <?php endforeach; ?>
@@ -39,11 +39,11 @@
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="exampleModalLabel">FORM INPUT PRODUK</h1>
-        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="close"></button>
       </div>
       <div class="modal-body">
         <form action="<?php echo base_url(). 'admin/data_barang/tambah_aksi'; ?>" method="post" enctype="multipart/form-data" >
-
+        <input type="hidden" name="<?= $this->security->get_csrf_token_name() ?>" value="<?= $this->security->get_csrf_hash() ?>"/>
         <div class="form-group">
             <label>Nama Barang</label>
             <input type="text" name="nama_brg" class="form-control">
@@ -56,7 +56,10 @@
 
         <div class="form-group">
             <label>Kategori</label>
-            <input type="text" name="kategori" class="form-control">
+          <select class="form-control" name="kategori">
+            <option>Makanan</option>
+            <option>Minuman</option>
+        </select>
         </div>
 
         <div class="form-group">
